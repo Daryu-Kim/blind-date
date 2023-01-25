@@ -1,9 +1,15 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import SplashView from "../views/SplashView.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
+    name: "splash",
+    component: SplashView,
+  },
+  {
+    path: "/home",
     name: "home",
     component: HomeView,
   },

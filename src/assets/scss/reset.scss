@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 200ms ease-in-out;
+}
+
+*::marker {
+  color: transparent;
+}

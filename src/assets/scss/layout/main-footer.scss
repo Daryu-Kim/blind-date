@@ -1,0 +1,31 @@
+footer {
+  background-color: black;
+  width: 100vw;
+  padding: 6px 28px;
+  position: fixed;
+  justify-content: space-between;
+  display: none;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-item {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-item > i {
+  font-size: 24px;
+}
+
+.footer-item > p {
+  margin-top: 6px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

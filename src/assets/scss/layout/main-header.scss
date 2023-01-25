@@ -1,0 +1,35 @@
+@import "../variabled";
+@import "../font.scss";
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 42px;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, $gradient-top 0%, $gradient-midtop 19%, $gradient-midbottom 60%, $gradient-bottom 100%);
+  box-shadow: 0 4px 8px rgba($color: #000000, $alpha: 0.35);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-item {
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 12px;
+  line-height: 42px;
+}
+
+.header-item:last-child {
+  margin-right: 0;
+}
+
+.header-menu {
+  width: 28px;
+}
