@@ -4,10 +4,10 @@
 header {
   position: fixed;
   width: 100%;
-  height: 42px;
+  height: 56px;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to right, $gradient-top 0%, $gradient-midtop 19%, $gradient-midbottom 60%, $gradient-bottom 100%);
+  background-color: $background-color;
   box-shadow: 0 4px 8px rgba($color: #000000, $alpha: 0.35);
   display: flex;
   justify-content: space-between;
@@ -22,8 +22,8 @@ header {
 .header-item {
   font-size: 18px;
   font-weight: 700;
-  margin-right: 12px;
-  line-height: 42px;
+  margin-right: 16px;
+  cursor: pointer;
 }
 
 .header-item:last-child {

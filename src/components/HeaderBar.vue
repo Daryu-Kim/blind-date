@@ -18,6 +18,20 @@ export default defineComponent({
     msg: String,
   },
 });
+
+const header_item = document.querySelectorAll(".header-item");
+
+header_item.forEach((element, index) => {
+  element.addEventListener("click", function () {
+    HeaderItemClicked(index);
+  });
+});
+
+function HeaderItemClicked(index: number) {
+  if (index == 0) {
+    alert("0");
+  }
+}
 </script>
 
 <style lang="scss" scoped>

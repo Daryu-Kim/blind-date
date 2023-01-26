@@ -1,47 +1,22 @@
 <template>
   <HeaderBar />
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <p style="font-size: 48px">asdfasdf</p>
-    <p style="font-size: 48px">asdfasdf</p>
-    <p style="font-size: 48px">asdfasdf</p>
-    <p style="font-size: 48px">asdfasdf</p>
-    <p style="font-size: 48px">asdfasdf</p>
-    <p>wuiefhiuweni</p>
-    <p>asdfasdf</p>
-    <p>wuiefhiuweni</p>
-    <p>asdfasdf</p>
-    <p>wuiefhiuweni</p>
-    <p>asdfasdf</p>
-    <p>wuiefhiuweni</p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, dicta!
-      Ipsam, delectus obcaecati. Iusto dolores aperiam nulla porro corporis
-      omnis ipsum magni sed quae, dolorem amet dolore exercitationem molestias!
-      Dolor.
-    </p>
+    <div class="home-recommend-box">
+      <div class="home-recommend-title-box">
+        <p class="home-recommend-title">오늘의 추천</p>
+        <p class="home-recommend-title-des">매일 0시에 초기화됩니다</p>
+      </div>
+      <div class="home-recommend-list"></div>
+    </div>
+    <router-link to="/about" class="home-recommend-retry">
+      <p>한번 더 추천받기</p>
+    </router-link>
   </div>
   <FooterBar />
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
-import HeaderBar from "@/components/HeaderBar.vue";
-import FooterBar from "@/components/FooterBar.vue";
-
-export default defineComponent({
-  name: "HomeView",
-  components: {
-    HeaderBar,
-    FooterBar,
-  },
-});
-</script>
+<script lang="ts" src="@/assets/ts/HomeScript.ts" />
 
 <style lang="scss">
-.home {
-  margin-top: 42px;
-  height: calc(100vh - 42px - 56px);
-  overflow: scroll;
-}
+@import "@/assets/scss/views/HomeSCSS.scss";
 </style>
