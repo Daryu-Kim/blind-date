@@ -35,5 +35,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-@import "@/assets/scss/layout/main-footer.scss";
+@import "@/assets/scss/components/main-footer.scss";
 </style>

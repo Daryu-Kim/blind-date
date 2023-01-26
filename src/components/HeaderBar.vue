@@ -21,5 +21,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/scss/layout/main-header.scss";
+@import "@/assets/scss/components/main-header.scss";
 </style>
