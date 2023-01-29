@@ -27,6 +27,9 @@ export default defineComponent({
 
 .home-recommend-item {
   background-image: url("https://picsum.photos/600");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 8px;
   height: 50vh;
   width: 100%;
