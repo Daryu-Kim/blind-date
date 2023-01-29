@@ -28,6 +28,11 @@ main {
 .home-recommend-box {
   width: 100%;
   background-color: $background-color;
+  margin-top: 24px;
+}
+
+.home-recommend-box:first-child {
+  margin-top: 0;
 }
 
 .home-recommend-title-box {
@@ -50,49 +55,13 @@ main {
 
 .home-recommend-list {
   display: grid;
-  grid-template-columns: repeat(10, 150px);
+  grid-template-columns: repeat(10, calc(100vw - 48px));
   margin-top: 16px;
   overflow-x: scroll;
-  grid-gap: 16px;
-}
-
-.home-recommend-item {
-  cursor: pointer;
-}
-
-.home-recommend-item > img {
-  width: 150px;
-  height: 180px;
-  border-radius: 8px;
-}
-
-.home-recommend-item-textbox {
-  padding-left: 6px;
-  padding-right: 6px;
-}
-
-.home-recommend-item-text-top {
-  display: flex;
-  align-items: center;
-}
-
-.home-recommend-item-text-top > p {
-  margin-right: 12px;
-}
-
-.home-recommend-item-text-top > p:last-child {
-  margin-right: 0;
-}
-
-.home-recommend-item-text-age {
-  font-size: 14px;
-}
-
-.home-recommend-item-text-address {
-  font-size: 12px;
 }
 
 .home-recommend-retry {
+  margin-top: 16px;
   background-image: linear-gradient(to right, $gradient-top 0%, $gradient-midtop 19%, $gradient-midbottom 60%, $gradient-bottom 100%);
   padding: 8px;
   border-radius: 8px;
@@ -105,4 +74,29 @@ main {
   font-weight: 600;
   font-size: 18px;
   text-align: center;
+}
+
+.home-filter-list {
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  grid-gap: 8px;
+  margin-top: 16px;
+}
+
+.home-filter-item {
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  border-radius: 8px;
+}
+
+.home-filter-item > i {
+  margin-right: 16px;
+  font-size: 18px;
+}
+
+.home-filter-item > p {
+  font-weight: 500;
+  font-size: 18px;
 }

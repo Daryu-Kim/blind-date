@@ -14,12 +14,12 @@
     <input
       type="radio"
       name="footer"
-      id="footer-timeline"
+      id="footer-lounge"
       class="footer-item-radio"
     />
-    <label for="footer-timeline" class="footer-item-label">
-      <i class="fa-solid fa-timeline"></i>
-      <p class="footer-item-text">타임라인</p>
+    <label for="footer-lounge" class="footer-item-label">
+      <i class="fa-solid fa-mug-saucer"></i>
+      <p class="footer-item-text">라운지</p>
     </label>
     <input
       type="radio"

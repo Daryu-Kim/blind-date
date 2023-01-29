@@ -2,7 +2,7 @@
   <header>
     <div class="header-list">
       <p class="header-item">추천</p>
-      <p class="header-item">인기</p>
+      <p class="header-item">근처</p>
       <p class="header-item">바(Bar)</p>
     </div>
     <img src="@/assets/svg/header-shop.svg" alt="SHOP" class="header-menu" />
